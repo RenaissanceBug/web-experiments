@@ -1,0 +1,22 @@
+
+html { position: relative; }
+
+@media only screen and (min-width: 960px) {
+    html, body { font-size: 20px; }
+    #large { background-color: green; }
+}
+
+@media only screen and (max-width: 959px) {
+    #small, #medium { border: thin solid black; }
+    #large { border: thin solid white; }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 959px) {
+    html, body { font-size: 18px; }
+    #medium { background-color: green; }
+}
+
+@media only screen and (max-width: 480px) {
+    html, body { font-size: 12px; }
+    #small { background-color: green; }
+}

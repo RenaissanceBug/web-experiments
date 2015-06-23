@@ -1,0 +1,13 @@
+
+/* Stylesheet with media queries specifying behaviors for three different
+   non-overlapping page widths. */
+
+/* Here are the media query rules to test: */
+
+@media only screen and (max-width: 400px) { #small { background-color: green; } }
+
+@media only screen and (min-width: 401px) and (max-width: 800px) {
+    #medium { background-color: green; }
+}
+
+@media only screen and (min-width: 801px) { #large { background-color: green; } }

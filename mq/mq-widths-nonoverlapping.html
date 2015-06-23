@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Test media query width values</title>
+    <link rel="stylesheet" type="text/css" href="mq-common.css">
+    <link rel="stylesheet" type="text/css" href="mq-widths-nonoverlapping.css">
+
+</head>
+<body>
+    <div class="main">
+        <div id="small">Small query active</div>
+        <div id="medium">Medium query active</div>
+        <div id="large">Large query active</div>
+    </div>
+
+    <div id="results">
+        <h2>Results</h2>
+        <table>
+        <tr>
+            <th>Browser</th>
+            <th>Middle of each range</th>
+            <th>Boundary behavior</th>
+        </tr>
+        <tr>
+            <td>Firefox</td>
+            <td>OK</td>
+            <td>OK</td>
+        </tr>
+        <tr>
+            <td>Firefox Dev Ed (OS X)</td>
+            <td>OK</td>
+            <td>OK</td>
+        </tr>
+        <tr>
+            <td>Safari (OS X)</td>
+            <td>OK</td>
+            <td>Boundaries at 385-6 and 585-6 using Responsive Browser ext;
+                OK using win.resizeTo()</td>
+        </tr>
+        <tr>
+            <td>Chrome (OS X)</td>
+            <td>OK</td>
+            <td>OK</td>
+        </tr>
+    </div>
+</body>
+</html>
+
